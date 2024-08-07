@@ -1,0 +1,820 @@
+/*
+Theme Name:     Hello Education
+Theme URI:      https://sparklewpthemes.com/wordpress-themes/hello-education/
+Author:         sparklewpthemes
+Author URI:     https://sparklewpthemes.com/
+Description:    Hello Education is a WordPress theme to learn anything from anywhere. Hello Education Theme is compatible with Learn Press Plugin and that helps to create and sell online/offline courses, Training, Speakers, Coaching, etc easily.
+Version:        1.1.0
+Tested up to:   6.2
+Requires PHP:   5.6
+License:        GNU General Public License v3 or later
+License URI:    http://www.gnu.org/licenses/gpl-3.0.html
+Template:       educenter
+Text Domain:    hello-education
+Tags:           one-column, two-columns, right-sidebar, left-sidebar, custom-header, custom-background, custom-menu, translation-ready, featured-images, theme-options, custom-logo, e-commerce, footer-widgets
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Hello Education is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+SparkleWPThemes is distributed under the terms of the GNU GPL v3 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+
+/**
+ * Header
+*/
+
+.headerone .bottom-header {
+    position: relative;
+    padding: 25px 0;
+    z-index: 99;
+    box-shadow: none;
+}
+
+.header-middle-inner .top-header {
+    background-color: transparent !important;
+}
+
+.header-middle-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-middle-inner>div {
+    width: 33.33%;
+    text-align: center;
+}
+
+.general-header .top-header .right-contact {
+    float: left;
+}
+
+.headerone .bottom-header .contact-info .quickcontact .get-tuch {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.headerone .bottom-header .contact-info .quickcontact .get-tuch:last-child {
+    margin-right: 0;
+}
+
+.headerone .bottom-header .contact-info {
+    text-align: right;
+    color: #fff;
+    justify-content: end;
+}
+
+.headerone .bottom-header .contact-info a {
+    color: #fff;
+}
+
+.educenter-slider-disable .headerone .bottom-header .contact-info * {
+    color: #000;
+}
+
+.header-middle-inner> :not(:last-child) {
+    padding-right: 0;
+}
+
+.headerone .bottom-header .contact-info .quickcontact .get-tuch ul li h4 {
+    text-align: left;
+    line-height: 1;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.headerone .bottom-header .contact-info .quickcontact .get-tuch i,
+.headerone .bottom-header .contact-info .quickcontact .get-tuch ul {
+    display: inline-block;
+    margin: 0 2px;
+    vertical-align: middle;
+}
+
+.headerone .bottom-header .contact-info .quickcontact .get-tuch ul li p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.headerone .bottom-header .contact-info .quickcontact .get-tuch i {
+    font-size: 30px;
+}
+
+.general-header .top-header .contact-info ul li.fa {
+    font-weight: 700;
+}
+
+.educenter-slider-enable .header-nav-toggle div {
+    background-color: #fff !important;
+}
+
+/**
+ * Main Menu
+*/
+
+.headerone .nav-menu {
+    position: relative;
+    z-index: 99;
+}
+
+.headerone .nav-menu .box-header-nav {
+    position: relative;
+}
+
+.sticky-wrapper.is-sticky .bottom-header {
+    background: rgba(28, 110, 214, 0.9);
+}
+
+.headerone .nav-menu .box-header-nav {
+    float: none;
+    background: rgba(28, 110, 214, 0.9);
+    border-radius: 10px;
+}
+
+.headerone .box-header-nav>.main-menu {
+    text-align: center;
+}
+
+.headerone .box-header-nav .main-menu .page_item a,
+.headerone .box-header-nav .main-menu>.menu-item>a {
+    line-height: 30px;
+    color: #fff;
+}
+
+.educenter-slider-enable .headerone .bottom-header .contact-info .quickcontact .get-tuch i {
+    color: #fff !important;
+    height: auto;
+    width: auto;
+    font-size: 20px;
+    background: none;
+}
+
+.headerone .box-header-nav .main-menu>ul>.page_item,
+.headerone .box-header-nav .main-menu>.menu-item {
+    display: inline-block;
+    float: none;
+}
+
+.box-header-nav .main-menu .children>.page_item>a,
+.box-header-nav .main-menu .sub-menu>.menu-item>a {
+    text-align: left;
+}
+
+.box-header-nav .main-menu .children>.page_item>a,
+.box-header-nav .main-menu .sub-menu>.menu-item>a {
+    color: #fff;
+}
+
+/** home page content */
+body.educenter-slider-enable #masthead {
+    position: absolute;
+    top: 35px;
+    width: 100%;
+}
+
+/*
+ * AboutUs Section
+*/
+
+.edu-press-wrap {
+    display: table;
+    width: 100%;
+}
+
+.edu-press-wrap>* {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ed-about-us.layout-2 .ed-about-content {
+    position: relative;
+    float: none;
+    padding-left: 0;
+    padding-right: 0;
+    width: auto;
+    padding-right: 30px;
+}
+
+.ed-about-us.layout-2 .ed-about-image {
+    position: relative;
+    float: none;
+    width: 35%;
+    right: 0;
+    bottom: 0;
+}
+
+.ed-about-us.layout-2 .ed-about-list h3.ui-accordion-header {
+    color: #fff;
+    background: #004a8d;
+    margin-bottom: 10px;
+    padding: 10px 35px;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+
+.ed-about-us.layout-2 .ed-about-list h3.ui-accordion-header:before {
+    content: '\f067';
+    position: absolute;
+    font-family: FontAwesome;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    background: #004a8d;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border: 3px solid #fff;
+    left: -18px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    text-align: center;
+    line-height: 30px;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+}
+
+.ed-about-us.layout-2 .ed-about-list h3.ui-accordion-header.ui-accordion-header-active:before {
+    content: '+';
+}
+
+.ed-about-us.layout-2 .ed-about-list h3.ui-accordion-header:before {
+    content: "-";
+}
+
+.ed-about-us.layout-2 .ed-about-list h3.ui-accordion-header.ui-state-active {
+    margin-bottom: 0;
+}
+
+.ed-about-us.layout-2 .ed-about-list .ui-accordion-content {
+    display: block;
+    font-size: 16px;
+    padding: 12px 25px;
+    background: #fff;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 16px 2px #cecece70;
+}
+
+.ed-about-us.layout-2.ed-accordin-layout .ed-about-list {
+    padding: 0 15px;
+}
+
+
+/**
+ * Slider Features Services Area
+*/
+.ed-slider .ed-slide div .ed-slider-info h2 {
+    color: #fdc735;
+}
+
+.ed-slider .ed-slide div .ed-slider-info a.slider-button {
+    padding: 11px 37px 12px;
+    border-radius: 60px;
+    background-color: #ff5161;
+}
+
+.edu-section-wrapper.edu-features-wrapper {
+    margin-top: 30px;
+}
+
+.educenter-slider-enable .edu-section-wrapper.edu-features-wrapper {
+    margin-top: -125px;
+    z-index: 10;
+    position: relative;
+}
+
+.edu-features-wrapper .edu-column-wrapper .single-post-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    text-align: left;
+    background: #004a8d;
+    color: #fff;
+    padding: 30px 25px 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    line-height: 1.6;
+    margin: 0px -2px;
+}
+
+.edu-features-wrapper .edu-column-wrapper .single-post-wrapper:hover {
+    margin-top: -30px;
+}
+
+.edu-features-wrapper .edu-column-wrapper .single-post-wrapper.edu-column-1 {
+    background: #10c45c none repeat scroll 0 0;
+    border-radius: 5px 0 0 0;
+}
+
+.edu-features-wrapper .edu-column-wrapper .single-post-wrapper.edu-column-2 {
+    background: #fdc735 none repeat scroll 0 0;
+}
+
+.edu-features-wrapper .edu-column-wrapper .single-post-wrapper.edu-column-3 {
+    background: #307ad5 none repeat scroll 0 0;
+}
+
+.edu-features-wrapper .edu-column-wrapper .single-post-wrapper.edu-column-4 {
+    background: #e948ae none repeat scroll 0 0;
+    border-radius: 0 5px 0 0;
+}
+
+.edu-features-wrapper .edu-column-wrapper .single-post-wrapper.edu-column-5 {
+    background: #e948ae none repeat scroll 0 0;
+    border-radius: 0 0 0 5px;
+}
+
+.edu-features-wrapper .edu-column-wrapper .single-post-wrapper.edu-column-6 {
+    background: #307ad5 none repeat scroll 0 0;
+}
+
+.edu-features-wrapper .edu-column-wrapper .single-post-wrapper.edu-column-7 {
+    background: #fdc735 none repeat scroll 0 0;
+}
+
+.edu-features-wrapper .edu-column-wrapper .single-post-wrapper.edu-column-8 {
+    background: #10c45c none repeat scroll 0 0;
+    border-radius: 0 0 5px 0;
+}
+
+.edu-features-wrapper .edu-column-wrapper .single-post-wrapper .icon-holder {
+    font-size: 36px;
+    margin-bottom: 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+.edu-features-wrapper .edu-column-wrapper .single-post-wrapper h3.post-title {
+    margin-bottom: 10px;
+}
+
+.edu-features-wrapper .edu-column-wrapper .single-post-wrapper h3.post-title a {
+    color: #fff;
+    font-weight: 400;
+    font-size: 25px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+/** gallery **/
+#edu-gallery-section .section-wrap>.container {
+    display: flex;
+    align-items: center;
+}
+
+#edu-gallery-section .ed-header {
+    width: 30%;
+    text-align: left;
+}
+
+#edu-gallery-section .ed-gallery-wrapper {
+    flex: 1;
+}
+
+#edu-gallery-section .ed-header.layout-2 h2.section-header:before {
+    left: 0;
+    right: unset;
+}
+
+#edu-gallery-section .ed-header.layout-2 h2.section-header:after {
+    margin: 0;
+}
+
+/**
+ * Responsive
+*/
+
+@media (max-width: 1250px) {
+    .educenter-slider-enable .edu-section-wrapper.edu-features-wrapper {
+        margin-top: -75px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .educenter-slider-enable .edu-section-wrapper.edu-features-wrapper {
+        margin-top: -50px;
+    }
+
+    .edu-features-wrapper .edu-column-wrapper .single-post-wrapper {
+        width: 49%;
+        margin-right: 2%;
+    }
+
+    .edu-features-wrapper .edu-column-wrapper .single-post-wrapper:nth-child(3n) {
+        margin-right: 2%;
+    }
+
+    .edu-features-wrapper .edu-column-wrapper .single-post-wrapper:nth-child(2n),
+    .edu-features-wrapper .edu-column-wrapper .single-post-wrapper:nth-child(4n),
+    .edu-features-wrapper .edu-column-wrapper .single-post-wrapper:nth-child(6n),
+    .edu-features-wrapper .edu-column-wrapper .single-post-wrapper:nth-child(8n) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .top-header.social-icons-wrapper,
+    .headerone .bottom-header .contact-info {
+        display: none;
+    }
+
+    .headerone .bottom-header {
+        padding: 0;
+    }
+
+    body.educenter-slider-disable .headerone .bottom-header {
+        border-bottom: 1px solid silver;
+    }
+
+    body.educenter-slider-enable #masthead {
+        position: relative;
+        background: rgba(28, 110, 214, 1);
+        top: 0;
+    }
+
+    .header-middle-inner {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-middle-inner>div {
+        width: unset;
+    }
+
+    .headerone .nav-menu .box-header-nav {
+        position: absolute;
+    }
+
+    .ed-slider .ed-slide div .ed-slider-info h2 {
+        font-size: 28px !important;
+    }
+
+    .ed-slider .ed-slide div .ed-slider-info {
+        top: 60%;
+    }
+
+    .ed-slider,
+    .ed-breadcrumb {
+        margin-top: 0;
+    }
+
+    .headerone .nav-menu {
+        background: #fff;
+    }
+
+    .headerone .box-header-nav>.main-menu {
+        text-align: left;
+    }
+
+    .ed-slider.slider-layout-2 .lSAction>a {
+        z-index: 1;
+    }
+
+    .educenter-slider-enable .edu-section-wrapper.edu-features-wrapper {
+        margin-top: 25px;
+        z-index: 0;
+    }
+
+    #edu-gallery-section>.container {
+        display: block;
+    }
+
+    #edu-gallery-section .ed-header {
+        width: 100%;
+    }
+}
+
+@media (max-width: 860px) {
+    .ed-about-us.layout-2 .ed-about-content {
+        padding-right: 0;
+    }
+
+    .edu-press-wrap>* {
+        display: block;
+        vertical-align: middle;
+    }
+
+    .ed-about-us.layout-2 .ed-about-image {
+        width: 100%;
+    }
+
+    .ed-footer .ed-col-3 .ed-col {
+        width: 48%;
+        margin-right: 1%;
+    }
+
+    .ed-footer .ed-col-3 .ed-col:nth-child(3n) {
+        margin-right: 1%;
+    }
+}
+
+@media (max-width: 570px) {
+    .edu-features-wrapper .edu-column-wrapper .single-post-wrapper {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .ed-slider .ed-slide div .ed-slider-info h2 {
+        font-size: 25px !important;
+    }
+}
+
+
+/** learnpress */
+.lp-archive-courses .learn-press-courses .course {
+    border-radius: 0 0 6px 6px;
+}
+
+.lp-archive-courses .learn-press-courses[data-layout="grid"] .course .course-item .course-wrap-thumbnail .course-thumbnail .thumbnail img {
+    border-radius: 6px 6px 0 0;
+}
+
+.lp-archive-courses .learn-press-courses[data-layout="grid"] .course .course-item {
+    box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 6px 6px;
+}
+
+.lp-archive-courses .learn-press-courses[data-layout="grid"] .course .course-item .course-content {
+    text-align: center;
+}
+
+.lp-archive-courses .learn-press-courses[data-layout="grid"] .course .course-item .course-content .course-info .course-footer .course-students .course-students-number,
+.lp-archive-courses .learn-press-courses[data-layout="grid"] .course .course-item .course-content .course-info .course-footer .course-students::before {
+    font-size: 14px;
+}
+
+.lp-archive-courses .learn-press-courses .course .course-item .course-content .course-instructor {
+    display: none;
+}
+
+.lp-archive-courses .learn-press-courses .course .course-item .course-content .course-instructor.lp-education-instructor {
+    display: block;
+}
+
+.lp-archive-courses .learn-press-courses[data-layout="list"] .course .course-item .course-content .course-instructor.lp-education-instructor {
+    display: flex;
+}
+
+.course-instructor.lp-education-instructor img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+.lp-archive-courses .learn-press-courses[data-layout="list"] .course-instructor.lp-education-instructor {
+    margin-top: -8px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0 !important;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.lp-archive-courses .learn-press-courses[data-layout="grid"] .course-instructor.lp-education-instructor {
+    float: unset !important;
+    margin-top: -36px;
+    position: relative;
+    z-index: 1;
+}
+
+.lp-archive-courses .learn-press-courses .course .course-item .course-content .course-instructor a {
+    color: black;
+}
+
+.lp-archive-courses .learn-press-courses[data-layout="grid"] .course .course-item .course-content .course-info {
+    position: relative;
+}
+
+.lp-archive-courses .learn-press-courses[data-layout="grid"] .course .course-item .course-content .course-info::before {
+    content: '';
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #000;
+    background-color: rgb(0, 0, 0);
+    z-index: 10;
+}
+
+.lp-archive-courses .learn-press-courses[data-layout="list"] .course {
+    box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.2);
+}
+
+.lp-archive-courses .learn-press-courses[data-items="1"][data-layout="grid"] .course {
+    width: 100%;
+}
+
+.lp-archive-courses .learn-press-courses[data-items="2"][data-layout="grid"] .course {
+    width: 50%;
+}
+
+.lp-archive-courses .learn-press-courses[data-items="3"][data-layout="grid"] .course {
+    width: 33.33%;
+}
+
+@media (max-width: 900px) {
+
+    .lp-archive-courses .learn-press-courses[data-items="2"][data-layout="grid"] .course,
+    .lp-archive-courses .learn-press-courses[data-items="3"][data-layout="grid"] .course,
+    .lp-archive-courses .learn-press-courses[data-items="4"][data-layout="grid"] .course {
+        width: 50%;
+    }
+}
+
+/** couse single page */
+.lp-archive-courses .course-summary .course-summary-content .lp-entry-content.lp-content-area .course-summary-sidebar .course-summary-sidebar__inner {
+    box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+.lp-archive-courses .course-summary .course-summary-content .lp-entry-content.lp-content-area .course-summary-sidebar .course-summary-sidebar__inner .course-sidebar-secondary {
+    padding: 0 15px;
+}
+
+/** counter section */
+.educenter_counter {
+    border: none;
+}
+
+.educenter_counter::before,
+.educenter_counter::after {
+    background-color: transparent !important;
+}
+
+.educenter_counter_wrap {
+    color: #fdc735;
+}
+
+.educenter_counter-title {
+    text-transform: initial;
+    font-size: 18px;
+}
+
+@media(min-width:901px) {
+
+    /** single page breadcrumb */
+    .educenter-slider-disable .ed-breadcrumb {
+        margin-top: -52px;
+    }
+
+    .educenter-slider-enable .ed-breadcrumb {
+        min-height: 480px;
+    }
+}
+
+.ed-breadcrumb .breadcrumb-list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    top: unset;
+}
+
+.single-lp_course .ed-breadcrumb {
+    display: none;
+}
+
+.lp-archive-courses .course-summary .course-summary-content .course-detail-info {
+    padding-top: 220px;
+    padding-bottom: 35px;
+    position: relative;
+}
+
+.lp-archive-courses .course-summary .course-summary-content .lp-entry-content.lp-content-area .course-summary-sidebar .course-summary-sidebar__inner .course-sidebar-top {
+    border-radius: 5px;
+}
+
+.course-summary .course-summary-sidebar.slide-top .course-summary-sidebar__inner {
+    position: relative;
+}
+
+.lp-archive-courses .course-summary .course-summary-content .course-detail-info .lp-content-area * {
+    z-index: 1;
+    position: relative;
+}
+
+.lp-archive-courses .course-summary .course-summary-content .course-detail-info {
+    position: relative;
+}
+
+.lp-archive-courses .course-summary .course-summary-content .course-detail-info .lp-content-area:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.lp-archive-courses .course-summary .course-summary-content .lp-entry-content.lp-content-area .course-summary-sidebar .course-summary-sidebar__inner .learn-press-course-wishlist {
+    padding: 10px !important;
+}
+
+.lp-archive-courses .course-summary .course-summary-content .lp-entry-content.lp-content-area .course-summary-sidebar .course-summary-sidebar__inner .learn-press-course-wishlist::before {
+    font-size: 16px;
+}
+
+.wrapper-profile-header.wrap-fullwidth {
+    margin: 0;
+}
+
+.become-teacher-fields.form-fields li,
+.learn-press-login li,
+.learn-press-filters li,
+.lp-profile-nav-tabs ul li {
+    list-style-type: none;
+}
+
+.learn-press-courses.profile-courses.courses-list.learn-press-wishlist-courses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.learn-press-courses.profile-courses.courses-list.learn-press-wishlist-courses li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.ed-testimonials .ed-testimonial-wrap.layout-1 .ed-test-slide .ed-text-holder {
+    border: none;
+    border-radius: 0;
+}
+
+#checkout-account-register .form-field label {
+    width: 150px;
+    float: left;
+}
+
+.nav-next a {
+    justify-content: end;
+}
+
+.ed-content-wrap ul ul {
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.nav-previous a,
+.nav-next a,
+.entry-content a,
+ol.wp-block-latest-comments a,
+.ed-blog .ed-blog-wrap .ed-blog-col .ed-bottom-wrap .ed-tag a,
+.ed-blog .ed-blog-wrap .ed-blog-col .ed-bottom-wrap .ed-share-wrap a,
+.comment-content a,
+.ed-blog .ed-blog-wrap .ed-blog-col .ed-content-wrap a:not(.ed-button) {
+    text-decoration: underline;
+}
+
+.ed-services .ed-service-left .ed-col-holder .col h3,
+.ed-courses .ed-text-holder h3 {
+    padding-bottom: 0;
+}
+
+.ed-blog .ed-blog-wrap.layout-2 .ed-desc-wrap {
+    text-align: left;
+}
+
+.ed-services.layout-2 .ed-service-left .ed-col-holder .col h3:before,
+.ed-blog .ed-blog-wrap.layout-2 .ed-desc-wrap .ed-title h3:before {
+    content: none;
+}
+
+.ed-blog .ed-blog-wrap .ed-blog-col .ed-meta-wrap,
+.ed-blog .ed-blog-wrap .ed-blog-col .ed-title h3 {
+    margin-bottom: 0;
+}
+
+@media(min-width: 1024px) {
+    .ed-slide .slide img {
+        height: 800px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 900px) {
+    .site-branding.logo {
+        display: block !important;
+    }
+
+
+}

@@ -1,0 +1,172 @@
+/*
+Theme Name: Learn Education Business
+Template: bizberg
+Text Domain: learn-education-business
+Author: Bizberg Themes
+Author URI: https://bizbergthemes.com/
+Theme URI: https://bizbergthemes.com/downloads/learn-education-business/
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Description: Learn Education Business, a child theme derived from the Bizberg WordPress Theme, stands out as a remarkable free education school WordPress theme. Designed with a focus on cleanliness and modernity, this theme caters to a wide array of educational purposes, making it an ideal choice for various institutions such as universities, colleges, schools, workshops, and training centers. Moreover, it serves as an excellent platform for marketing, book selling, and running courses or tuition classes.With its versatility and adaptability, Learn Education Business emerges as a perfect solution for crafting compelling educational websites. This free WordPress theme boasts full responsiveness, ensuring seamless performance across different devices. Furthermore, it is cross-browser compatible, translation-ready, and optimized for SEO, enhancing its visibility and reach on the web.Should you encounter any challenges while utilizing this theme, worry not. Extensive documentation is available for reference, and our dedicated support team is always ready to assist you. The integration with Elementor adds another layer of flexibility, empowering users to customize every section effortlessly.In the realm of online education, having a visually appealing and functional website is crucial. With Learn Education Business, you gain access to a plethora of features tailored to meet the demands of online courses, making it the best free WordPress theme for this purpose. Whether you're looking to download a free education WordPress theme with demo content or seeking a free school WordPress theme, Learn Education Business has you covered.Download Learn Education Business today and embark on a journey to create a captivating online presence for your educational venture. Elevate your institution's visibility and accessibility with this top-notch education WordPress theme free of cost.
+Tags: custom-logo,custom-menu,featured-images,threaded-comments,translation-ready,left-sidebar,right-sidebar,grid-layout,theme-options,blog,news,portfolio
+Version: 0.3
+Requires PHP: 5.6
+Tested up to: 6.2
+*/
+
+.navbar-default .navbar-nav > li > a {
+    letter-spacing: 0;
+}
+
+.blog-lists.blog-nosidebar-1 .blog-listing.no-sidebars .blog-post.blog-large .entry-header {
+    margin-top: 0 !important;
+}
+
+.category1 {
+    padding: 80px 0;
+}
+
+.category1 .cat_wrap {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 40px;
+}
+
+.category1 .cat_wrap .left h2,
+.serives_wrap h2 {
+    font-family: 'MontserratRegular';
+    color: #000;
+}
+
+.category1 .cat_wrap .left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+}
+
+.category1 .cat_wrap .left a,
+.serives_wrap .title_wrap a {
+    background: #ffb606;
+    padding: 11px 30px 11px;
+    color: #fff;
+    display: inline;
+    width: max-content;
+    border-radius: 30px;
+    font-family: 'Poppins';
+    margin-top: 10px;
+}
+
+.category1 .cat_wrap .left a:hover,
+.services .serives_wrap .title_wrap a:hover {
+    color: #fff !important;
+    background: #000;
+}
+
+.category1 .cat_wrap .right .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.category1 .cat_wrap .right .content a {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.category1 .cat_wrap .right .content a span i {
+    font-size: 67px;
+    background: #eee;
+    padding: 20px;
+}
+
+.category1 .cat_wrap .right .content a span i {
+    font-size: 50px;
+    background: #fafafa;
+    padding: 40px;
+    border-radius: 10px;
+    color: #000;
+}
+
+.category1 .cat_wrap .right .content a:hover span i {
+    background: #ffb606;
+    color: #fff;
+}
+
+.category1 .cat_wrap .right .content a h4 {
+    margin-top: 10px;
+    font-family: 'MontserratRegular';
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.serives_wrap {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 40px;
+}
+
+.serives_wrap .title_wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+}
+
+.services {
+    padding: 0px 0 50px;
+}
+
+.serives_wrap .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+}
+
+.serives_wrap .content a p{
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'MontserratRegular';
+    font-size: 15px;
+}
+
+@media (max-width: 991px){
+
+    .category1 .cat_wrap {
+        grid-template-columns: 1fr;
+    }
+    .category1 .cat_wrap .left{
+        padding-bottom: 40px;
+    }
+    .category1 .cat_wrap .right .content {
+        justify-items: start;
+    }
+    .serives_wrap {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+    .category1 {
+        padding: 80px 0 60px;
+    }
+
+}
+
+@media (max-width: 414px){
+
+    .category1 .cat_wrap .right .content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .category1 .cat_wrap .right .content {
+        justify-items: center;
+    }
+    .category1 .cat_wrap .right .content a span i {
+        font-size: 40px;
+        padding: 30px;
+    }
+    .serives_wrap .content {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 25px;
+        row-gap: 25px;
+    }
+
+}

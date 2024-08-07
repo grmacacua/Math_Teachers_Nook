@@ -1,0 +1,22 @@
+/*
+Theme Name: Kids Education Soul
+Description: Used to style blocks.
+*/
+
+/* Button */
+.wp-block-button__link {
+    background: #54b77e;
+    color: #fff;
+}
+
+.is-style-outline .wp-block-button__link:not(.has-text-color) {
+    color: #54b77e;
+}
+
+.wp-block-button__link:hover,
+.wp-block-button__link:focus,
+.is-style-outline .wp-block-button__link:hover,
+.is-style-outline .wp-block-button__link:focus {
+    background-color: #e4572e;
+    color: #fff;
+}
